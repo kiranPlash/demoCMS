@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Payment Test</string>
+    <string name="db_name">limitless.db</string>
+    <string name="toolbar_title">Limitless</string>
+    <string name="server_error">Unable to connect to server, Please Try after some time...</string>
+
+
+</resources>

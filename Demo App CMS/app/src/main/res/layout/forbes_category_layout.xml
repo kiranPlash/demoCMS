@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/forbes_temp1_id"
+        layout="@layout/forbes_temp1" />
+
+    <include
+        android:id="@+id/forbes_temp2_id"
+        layout="@layout/forbes_temp2" />
+
+    <include
+        android:id="@+id/forbes_temp3_id"
+        layout="@layout/forbes_temp3" />
+
+    <include
+        android:id="@+id/forbes_theme4_id"
+        layout="@layout/forbes_temp4" />
+
+    <include
+        android:id="@+id/forbes_temp5_id"
+        layout="@layout/forbes_temp5" />
+
+    <include
+        android:id="@+id/forbes_temp6_id"
+        layout="@layout/forbes_temp6" />
+
+    <include
+        android:id="@+id/forbes_temp7_id"
+        layout="@layout/forbes_temp7" />
+
+</LinearLayout>

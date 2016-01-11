@@ -1,0 +1,51 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" manifest="app.manifest">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Magazine </title>
+
+    <link href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+    <link href="Style3.css" rel="stylesheet"/>
+
+</head>
+<body>
+
+<div class="container-fluid">
+
+
+    <div id="article-container">
+
+        <!-- Article gets rendered in this div. -->
+        <div class="article-content row">
+            <div id="article">
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div style="background-color:{{COLOURNAME}};margin-top:11.8rem;color:white;">
+                            <div class="column">{{CategoryName}}</div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12">
+                        <h1 class="semi-head text-center">
+                            {{ArticleHeadline}}
+                        </h1>
+                    </div>
+                    <div class="col-xs-12">
+                        {{{ArticleBody}}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="file:///android_asset/article2.js" type=""></script>
+    <script src="article2.js" type=""></script>
+
+
+</div>
+</body>
+</html> 

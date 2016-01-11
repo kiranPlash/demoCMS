@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">TruNext</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="anonymous_login">Anonymous Login</string>
+    <string name="facebook_login">Facebook Login</string>
+    <string name="facebook_app_id">512163032279480</string>
+
+    <string name="please_wait">Please Wait</string>
+    <string name="offline_loading_error">This Category is not available for offline loading</string>
+    <string name="label_share_app_subject">Hi, I found an Interesting Article on TRUNEXT  click on the link below to read it</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="place_holder_sum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis scelerisque libero id dictum fringilla. Nulla sodales porta massa nec sollicitudin. Cras dapibus at purus quis interdum. In ultricies sagittis diam ac pharetra. Vestibulum lorem lorem, luctus quis ex nec, lacinia elementum odio. Pellentesque molestie iaculis mauris sed mollis. Integer nec purus bibendum, rhoncus ligula nec, aliquam velit. Aliquam pulvinar lobortis lectus,   </string>
+    <string name="title_logout">Logout</string>
+    <string name="title_book_mark">BOOKMARKS</string>
+
+    <string name="title_activity_login_inside">LoginInsideActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="parse_application_id">s4HkuvFirwAixY4AK7CgwzN65zUtpdI7QofeZ6zb</string>
+    <string name="parse_clint_id">gQ285sSxaE1J0i1vUTU4lnDUlM7Eq4KjjAgdYW9N</string>
+
+
+    <string name="Helvetica_85_Heavy">Helvetica 85 Heavy.ttf</string>
+    <string name="HelveticaNeueLTStd_Hv">HelveticaNeueLTStd-Hv.otf</string>
+    <string name="HelveticaNeueLTStd_HvCn">HelveticaNeueLTStd-HvCn.otf</string>
+    <string name="HelveticaNeueLTStd_HvEx">HelveticaNeueLTStd-HvEx.otf</string>
+    <string name="HelveticaNeueLTStd_BlkCn95">HelveticaNeueLTStd-BlkCn.otf</string>
+    <string name="HelveticaNeueLTStd_Lt">HelveticaNeueLTStd-Lt.otf</string>
+    <string name="DroidSerif_Regular">DroidSerif-Regular.ttf</string>
+
+    <string name="segoe_ui_bold">segoe-ui-bold.ttf</string>
+    <string name="Nicholas_Bold">Nicholas-Bold.ttf</string>
+    <string name="Lato_Regular">Lato-Regular.ttf</string>
+    <string name="Lato_Bold">Lato-Bold.ttf</string>
+    <string name="no_data_available">No Articles to Display</string>
+    <string name="server_error">Unable to connect to server, Please Try after some time...</string>
+    <string name="clanpro_bold">clanpro-bold.ttf</string>
+    <string name="clanpro_news">clanpro-news.ttf</string>
+    <string name="AvenirLTStd_Black">AvenirLTStd-Black.otf</string>
+
+
+    <string name="ok">Ok</string>
+    <string name="openEmailClient">go to Mail</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="toolbar_title">Title</string>
+    <string name="db_name">testOne</string>
+    <string name="forbes_login_text">Welcome to the all New Forbes India</string>
+    <string name="title_activity_splash_screen2">SplashScreen2</string>
+    <string name="awesome_signup">Awesome ! We just sent you an emal to confirm. Please check your email to confirm signup.</string>
+    <string name="title_activity_login_forbes">LoginForbesActivity</string>
+    <string name="SourceSansPro_Semibold">SourceSansPro-Semibold.otf</string>
+    <string name="SourceSansPro_Regular">SourceSansPro-Regular.otf</string>
+    <string name="AvenirLTStd_Roman">AvenirLTStd-Roman.otf</string>
+    <string name="gotham_book">gotham-book.ttf</string>
+    <string name="login_title_text">Welcome to Tru-Next CMS Demo App</string>
+
+    <string name="DroidSerif_Bold">DroidSerif-Bold.ttf</string>
+
+</resources>

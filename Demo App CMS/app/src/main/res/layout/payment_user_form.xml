@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:trunext="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    android:orientation="vertical">
+
+
+    <in.plash.trunext.customfonts.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_16"
+        android:text="PAYMENT INFORMATION"
+        android:textColor="@color/sub_text_kindofBlack"
+        android:textSize="@dimen/text_size_h7"
+        trunext:fontName="@string/Lato_Bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/margin_16"
+        android:background="@color/nav_text_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_25"
+        android:layout_marginRight="@dimen/margin_25"
+        android:layout_marginTop="@dimen/margin_16"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <in.plash.trunext.customfonts.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="ITEM NAME"
+            android:textColor="@color/sub_text_kindofBlack"
+            android:textSize="@dimen/text_size_h8"
+            trunext:fontName="@string/Lato_Bold" />
+
+        <in.plash.trunext.customfonts.MyTextView
+            android:id="@+id/pymt_info_subName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_30"
+            android:layout_weight="1"
+            android:text="ONE TIME ISSUE"
+            android:textColor="@color/sub_text_kindofBlack"
+            android:textSize="@dimen/text_size_h8"
+            trunext:fontName="@string/Lato_Bold" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/margin_16"
+        android:background="@color/divider_grey_light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_25"
+        android:layout_marginRight="@dimen/margin_25"
+        android:layout_marginTop="@dimen/margin_16"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <in.plash.trunext.customfonts.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="PRICE"
+                android:textColor="@color/sub_text_kindofBlack"
+                android:textSize="@dimen/text_size_h8"
+                trunext:fontName="@string/Lato_Bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <in.plash.trunext.customfonts.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:text="₹ "
+                android:textColor="@color/sub_text_kindofBlack"
+                android:textSize="@dimen/text_size_h8"
+                trunext:fontName="@string/Lato_Bold" />
+
+            <in.plash.trunext.customfonts.MyTextView
+                android:id="@+id/pymt_info_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="30"
+                android:textColor="@color/sub_text_kindofBlack"
+                android:textSize="@dimen/text_size_h8"
+                trunext:fontName="@string/Lato_Bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/margin_16"
+        android:background="@color/divider_grey_light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_40"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/nav_text_grey" />
+
+        <in.plash.trunext.customfonts.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_16"
+            android:text="BUYER DETAILS"
+            android:textColor="@color/sub_text_kindofBlack"
+            android:textSize="@dimen/text_size_h7"
+            trunext:fontName="@string/Lato_Bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_16"
+            android:background="@color/nav_text_grey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_25"
+            android:layout_marginRight="@dimen/margin_25"
+            android:layout_marginTop="@dimen/margin_16"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <in.plash.trunext.customfonts.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="MOBILE NUMBER"
+                android:textColor="@color/sub_text_kindofBlack"
+                android:textSize="@dimen/text_size_h8"
+                trunext:fontName="@string/Lato_Bold" />
+
+            <EditText
+                android:id="@+id/pymt_et_txt_mobNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:inputType="number"
+                android:layout_weight="1"
+                android:hint=" 987654321" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_16"
+            android:background="@color/divider_grey_light" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_25"
+            android:layout_marginRight="@dimen/margin_25"
+            android:layout_marginTop="@dimen/margin_16"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <in.plash.trunext.customfonts.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="EMAIL ADDRESS"
+                android:textColor="@color/sub_text_kindofBlack"
+                android:textSize="@dimen/text_size_h8"
+                trunext:fontName="@string/Lato_Bold" />
+
+            <EditText
+                android:id="@+id/pymt_et_txt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:hint=" abc@email.com" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_16"
+            android:background="@color/divider_grey_light" />
+
+    </LinearLayout>
+
+    <in.plash.trunext.customfonts.MyTextView
+        android:id="@+id/pymt_btn_cntPurchase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_20"
+        android:background="@drawable/rounded_corner_sub"
+        android:gravity="center"
+        android:text="Continue Purchase"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_h6"
+        trunext:fontName="@string/Lato_Bold" />
+
+</LinearLayout>

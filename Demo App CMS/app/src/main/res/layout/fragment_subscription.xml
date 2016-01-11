@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:trunext="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:trunext="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_sub_issue"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="@dimen/margin_60"
+                    android:layout_marginRight="@dimen/margin_60"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:adjustViewBounds="true"
+                    android:background="@color/nav_text_grey"
+                    android:scaleType="centerCrop" />
+
+                <in.plash.trunext.customfonts.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_10"
+                    android:text="Select a Subscription Type"
+                    android:textColor="@color/sub_text_kindofBlack"
+                    android:textSize="@dimen/text_size_h7"
+                    trunext:fontName="@string/segoe_ui_bold" />
+            </LinearLayout>
+
+            <include
+                android:id="@+id/sub_price"
+                layout="@layout/sub_price_lyt"
+                />
+
+            <include
+                android:id="@+id/sub_user_form"
+                layout="@layout/payment_user_form" />
+
+
+           <!-- <LinearLayout
+                android:id="@+id/sub_layout_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/sub_tab_grey"
+                    android:orientation="vertical">
+
+                    <in.media.plash.trunext.customfonts.MyTextView
+                        android:id="@+id/sub_one_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/margin_10"
+                        android:text="ONE-TIME"
+                        android:textAllCaps="true"
+                        android:textColor="@color/sub_text_kindofBlack"
+                        android:textSize="@dimen/text_size_h7"
+                        trunext:fontName="@string/Lato_Bold" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/lyt_one_ruppee"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_margin="@dimen/margin_20"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginStart="50dp"
+                            android:orientation="horizontal">
+
+                            <in.media.plash.trunext.customfonts.MyTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/margin_30"
+                                android:layout_marginStart="@dimen/margin_30"
+                                android:text="₹"
+                                android:textColor="@color/sub_text_kindofBlack"
+                                android:textSize="@dimen/text_size_h2"
+                                trunext:fontName="@string/Lato_Regular" />
+
+                            <in.media.plash.trunext.customfonts.MyTextView
+                                android:id="@+id/txt_sub_one_ruppee"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="00"
+                                android:textColor="@color/sub_text_kindofBlack"
+                                android:textSize="@dimen/text_size_h2"
+                                trunext:fontName="@string/Lato_Regular" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lyt_disc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_margin="@dimen/margin_20"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@+id/radio_btn_sub_one"
+                            android:layout_toStartOf="@+id/radio_btn_sub_one"
+                            android:orientation="horizontal">
+
+                            <in.media.plash.trunext.customfonts.MyTextView
+                                android:id="@+id/txt_sub_one_disc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/margin_30"
+                                android:layout_marginStart="@dimen/margin_30"
+                                android:text="0"
+                                android:textColor="@color/sub_disc_green"
+                                android:textSize="@dimen/text_size_h2"
+                                trunext:fontName="@string/Lato_Regular" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_1"
+                                android:orientation="vertical">
+
+                                <in.media.plash.trunext.customfonts.MyTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="%"
+                                    android:textColor="@color/sub_disc_green"
+                                    android:textSize="@dimen/text_size_h8"
+                                    trunext:fontName="@string/segoe_ui_bold" />
+
+                                <in.media.plash.trunext.customfonts.MyTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="-5dp"
+                                    android:text="OFF"
+                                    android:textColor="@color/sub_disc_green"
+                                    android:textSize="@dimen/text_size_h8"
+                                    trunext:fontName="@string/Lato_Regular" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <RadioButton
+                            android:id="@+id/radio_btn_sub_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="@dimen/margin_20" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <in.media.plash.trunext.customfonts.MyTextView
+                        android:id="@+id/sub_month_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/margin_10"
+                        android:text="monthly"
+                        android:textAllCaps="true"
+                        android:textColor="@color/sub_text_kindofBlack"
+                        android:textSize="@dimen/text_size_h6"
+                        trunext:fontName="@string/Lato_Bold" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/lyt_two_ruppee"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_margin="@dimen/margin_20"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginStart="50dp"
+                            android:orientation="horizontal">
+
+                            <in.media.plash.trunext.customfonts.MyTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/margin_30"
+                                android:layout_marginStart="@dimen/margin_30"
+                                android:text="₹"
+                                android:textColor="#f40000"
+                                android:textSize="@dimen/text_size_h2"
+                                trunext:fontName="@string/Lato_Regular" />
+
+                            <in.media.plash.trunext.customfonts.MyTextView
+                                android:id="@+id/txt_sub_month_ruppee"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="00"
+                                android:textColor="#f40000"
+                                android:textSize="@dimen/text_size_h1"
+                                trunext:fontName="@string/Lato_Regular" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lyt_month_disc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_margin="@dimen/margin_20"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@+id/radio_btn_sub_month"
+                            android:layout_toStartOf="@+id/radio_btn_sub_month"
+                            android:orientation="horizontal">
+
+                            <in.media.plash.trunext.customfonts.MyTextView
+                                android:id="@+id/txt_sub_month_disc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/margin_30"
+                                android:layout_marginStart="@dimen/margin_30"
+                                android:text="0"
+                                android:textColor="@color/sub_disc_green"
+                                android:textSize="@dimen/text_size_h1"
+                                trunext:fontName="@string/Lato_Regular" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_1"
+                                android:orientation="vertical">
+
+                                <in.media.plash.trunext.customfonts.MyTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="%"
+                                    android:textColor="@color/sub_disc_green"
+                                    android:textSize="@dimen/text_size_h8"
+                                    trunext:fontName="@string/segoe_ui_bold" />
+
+                                <in.media.plash.trunext.customfonts.MyTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="-5dp"
+                                    android:text="OFF"
+                                    android:textColor="@color/sub_disc_green"
+                                    android:textSize="@dimen/text_size_h8"
+                                    trunext:fontName="@string/Lato_Regular" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <RadioButton
+                            android:id="@+id/radio_btn_sub_month"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="@dimen/margin_20" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/sub_tab_grey"
+                    android:orientation="vertical">
+
+                    <in.media.plash.trunext.customfonts.MyTextView
+                        android:id="@+id/sub_year_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/margin_10"
+                        android:text="ANNUAL"
+                        android:textAllCaps="true"
+                        android:textColor="@color/sub_text_kindofBlack"
+                        android:textSize="@dimen/text_size_h7"
+                        trunext:fontName="@string/Lato_Bold" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/lyt_three_ruppee"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_margin="@dimen/margin_20"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginStart="50dp"
+                            android:orientation="horizontal">
+
+                            <in.media.plash.trunext.customfonts.MyTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/margin_30"
+                                android:layout_marginStart="@dimen/margin_30"
+                                android:text="₹"
+                                android:textColor="@color/sub_text_kindofBlack"
+                                android:textSize="@dimen/text_size_h2"
+                                trunext:fontName="@string/Lato_Regular" />
+
+                            <in.media.plash.trunext.customfonts.MyTextView
+                                android:id="@+id/txt_sub_year_ruppee"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="00"
+                                android:textColor="@color/sub_text_kindofBlack"
+                                android:textSize="@dimen/text_size_h2"
+                                trunext:fontName="@string/Lato_Regular" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lyt_year_disc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_margin="@dimen/margin_20"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@+id/radio_btn_sub_year"
+                            android:layout_toStartOf="@+id/radio_btn_sub_year"
+                            android:orientation="horizontal">
+
+                            <in.media.plash.trunext.customfonts.MyTextView
+                                android:id="@+id/txt_sub_year_disc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/margin_30"
+                                android:layout_marginStart="@dimen/margin_30"
+                                android:text="0"
+                                android:textColor="@color/sub_disc_green"
+                                android:textSize="@dimen/text_size_h2"
+                                trunext:fontName="@string/Lato_Regular" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_1"
+                                android:orientation="vertical">
+
+                                <in.media.plash.trunext.customfonts.MyTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="%"
+                                    android:textColor="@color/sub_disc_green"
+                                    android:textSize="@dimen/text_size_h8"
+                                    trunext:fontName="@string/segoe_ui_bold" />
+
+                                <in.media.plash.trunext.customfonts.MyTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="-5dp"
+                                    android:text="OFF"
+                                    android:textColor="@color/sub_disc_green"
+                                    android:textSize="@dimen/text_size_h8"
+                                    trunext:fontName="@string/Lato_Regular" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <RadioButton
+                            android:id="@+id/radio_btn_sub_year"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="@dimen/margin_20" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <in.media.plash.trunext.customfonts.MyTextView
+                    android:id="@+id/sub_place_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_20"
+                    android:background="@drawable/rounded_corner_sub"
+                    android:gravity="center"
+                    android:text="Place order"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_h6"
+                    trunext:fontName="@string/Lato_Bold" />
+
+            </LinearLayout>-->
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:trunext="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="12.5dp"
+
+    android:paddingTop="@dimen/margin_10">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin_10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/forbes_load"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:focusable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/progress_animation" />
+
+
+            <ImageView
+                android:id="@+id/issue_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:elevation="@dimen/margin_5"
+                android:background="@color/imageview_grey"
+                android:clickable="false" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_15"
+            android:layout_marginTop="@dimen/margin_15"
+            android:orientation="horizontal"
+            android:paddingLeft="12.5dp"
+            android:paddingRight="12.5dp">
+
+
+            <LinearLayout
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/margin_5"
+                android:orientation="vertical">
+
+            <in.plash.trunext.customfonts.MyTextView
+                android:id="@+id/issue_headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:ellipsize="end"
+                android:text="CARAVAN"
+                android:maxLines="1"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_h5"
+                android:textStyle="bold" />
+
+            <in.plash.trunext.customfonts.MyTextView
+                android:id="@+id/txt_issue_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/issue_headline"
+                android:layout_marginTop="@dimen/margin_5"
+                android:clickable="false"
+                android:ellipsize="end"
+                android:text="November 25, 2015"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_h8" />
+            </LinearLayout>
+            <in.plash.trunext.customfonts.MyTextView
+                android:id="@+id/txt_lyt_inside_issue_buy"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/rounded_corner"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="@dimen/margin_15"
+                android:paddingTop="@dimen/margin_20"
+                android:text="BUY"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_h5"
+                android:visibility="gone"
+                trunext:fontName="@string/DroidSerif_Bold" />
+
+            <in.plash.trunext.customfonts.MyTextView
+                android:id="@+id/issue_read"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@drawable/rounded_corner_caravan"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:focusable="true"
+                android:gravity="center"
+                android:padding="@dimen/margin_5"
+                android:paddingEnd="@dimen/margin_20"
+                android:paddingLeft="@dimen/margin_20"
+                android:paddingRight="@dimen/margin_20"
+                android:paddingStart="@dimen/margin_20"
+                android:text="READ"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_h5" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/inside_margin_5px"
+                android:background="@color/inside_divider_grey" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

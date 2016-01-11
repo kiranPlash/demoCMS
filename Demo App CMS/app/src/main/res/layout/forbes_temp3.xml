@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:trunext="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_bussiness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/forbes_load"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:focusable="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/progress_animation" />
+
+        <ImageView
+            android:id="@+id/forbes_cat_img_theme3"
+            android:layout_width="match_parent"
+            android:layout_height="485dp"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+
+        <View
+            android:id="@+id/view_buss_overlay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/forbes_cat_img_theme3"
+            android:background="#66bb0808"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/svg_triangle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/forbes_cat_img_theme3"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="-2dp"
+            android:layout_marginLeft="-3dp"
+            android:adjustViewBounds="true"
+            android:paddingRight="@dimen/inside_margin_5px"
+            android:src="@drawable/trianglepic" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/buss_layout_textdata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/inside_margin_71px"
+            android:layout_marginRight="@dimen/inside_margin_71px"
+            android:orientation="vertical">
+
+
+            <in.plash.trunext.customfonts.MyTextView
+                android:id="@+id/forbes_cat_txt_headline_theme3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:paddingTop="@dimen/margin_10"
+                android:text="Spice Jet's Second "
+                android:textColor="@color/black"
+                android:textScaleX="1"
+                android:textSize="@dimen/text_size_h6"
+                trunext:fontName="@string/segoe_ui_bold" />
+
+            <in.plash.trunext.customfonts.MyTextView
+                android:id="@+id/forbes_cat_txt_Summary_theme3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:paddingTop="@dimen/margin_10"
+                android:text="@string/place_holder_sum"
+                android:textColor="#000000"
+                android:textSize="@dimen/text_size_h7"
+                trunext:fontName="@string/DroidSerif_Regular" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_23"
+            android:layout_marginLeft="@dimen/inside_margin_71px"
+            android:layout_marginRight="18dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/inside_margin_5px"
+                android:layout_marginTop="20dp"
+                android:background="@color/black" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

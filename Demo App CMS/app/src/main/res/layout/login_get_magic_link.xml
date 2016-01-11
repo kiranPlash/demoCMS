@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:trunext="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_gradiant"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/signup_back"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="@dimen/margin_0"
+        android:padding="@dimen/margin_10"
+        android:tint="@color/login_txt_forbes_white"
+        android:src="@drawable/back_forbes_signup"
+        android:layout_alignTop="@+id/toolbar_title_forbes1"
+        android:layout_alignLeft="@+id/linearLayout4"
+        android:layout_alignStart="@+id/linearLayout4" />
+
+    <in.plash.trunext.customfonts.MyTextView
+        android:id="@+id/toolbar_title_forbes1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_inside_button"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_15"
+        android:text="@string/toolbar_title"
+        android:textColor="@color/login_txt_forbes_white"
+        android:textSize="35sp"
+        trunext:fontName="@string/Nicholas_Bold" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_title_forbes1"
+        android:layout_marginLeft="@dimen/margin_40"
+        android:layout_marginRight="@dimen/margin_40"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/margin_20"
+            android:tint="@color/login_txt_forbes_white"
+            android:src="@drawable/magic_stick" />
+
+        <in.plash.trunext.customfonts.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_30"
+            android:gravity="center"
+            android:text="Passwords are Passé"
+            android:textColor="@color/login_txt_forbes_white"
+            android:textSize="@dimen/text_size_h3"
+            trunext:fontName="@string/gotham_book" />
+
+        <in.plash.trunext.customfonts.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_30"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/margin_2"
+            android:text="Passwords are too hard to type and difficult to remember."
+            android:textColor="@color/login_txt_forbes_white"
+            android:textSize="@dimen/text_size_h7"
+            trunext:fontName="@string/gotham_book" />
+
+        <in.plash.trunext.customfonts.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_30"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/margin_2"
+            android:text="Get a magic link sent to your email that’ll sign you in instantly"
+            android:textColor="@color/login_txt_forbes_white"
+            android:textSize="@dimen/text_size_h7"
+            trunext:fontName="@string/gotham_book" />
+
+        <in.plash.trunext.customfonts.MyTextView
+            android:id="@+id/txt_btn_sign_up2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_40"
+            android:background="@drawable/rounded_corner_signin"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_30"
+            android:paddingStart="@dimen/margin_30"
+            android:paddingEnd="@dimen/margin_30"
+            android:paddingRight="@dimen/margin_30"
+            android:padding="@dimen/margin_10"
+            android:text="Send me a Magic Link"
+            android:textColor="@color/forbes_login_text_black"
+            android:textSize="@dimen/text_size_h7"
+            trunext:fontName="@string/gotham_book" />
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,56 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" manifest="app.manifest">
+<head>
+    <meta charset="utf-8" />
+    
+     <title>Article Render Page</title>
+    <link href="style.css" rel="stylesheet" />
+    <!--<script  src="../js/jquery-2.1.0.min.js" ></script>
+    <script src="../js/galleria-1.3.5.min.js"></script>-->
+</head>
+<body>
+       
+    <script id="article-template" type="text/x-handlebars-template"/>
+
+        <header class="article-header">
+            <h1 class="article-headline">{{ArticleHeadline}}</h1>
+            <h2>{{AuthorName}}</h2>
+            <!--<h3>{{PublisherName}}</h3>-->
+            <section class="article-attributes">
+                <!--<div class="read-count">
+                    <img src="../images/eye.png" width="48" />
+                    <div>{{TotalNoOfReadCount}}</div>
+                </div>
+
+                <div class="likes-count">
+                    <img src="../images/heart.png" width="48" />
+                    <div>{{TotalNoOfLikes}}</div>
+                </div>-->
+
+                <div class="publish-date">{{PublishedDateTime}}</div>
+            </section>
+        </header>
+
+        <article class="article">
+            <div id="article-content">{{{ArticleDescription}}}</div>
+        </article>
+
+
+    </script>
+
+    <div class="article-container">
+ 
+       <!-- Article gets rendered in this div. -->
+        <div class="article-content">
+        </div>
+
+    </div>
+
+   <script type="text/javascript">
+
+
+    </script>
+    <script src="article.js"></script>
+</body>
+</html>

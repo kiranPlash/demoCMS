@@ -1,0 +1,49 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" manifest="app.manifest">
+<head>
+    <meta charset="utf-8"/>
+
+    <title>Article Render Page</title>
+    <link href="Style2.css" rel="stylesheet"/>
+
+</head>
+<body>
+
+<
+
+<div class="article-container">
+
+    <!-- Article gets rendered in this div. -->
+    <div class="article-content">
+
+
+        <center>
+            <div class="container">
+                <div class="wrapper">
+                    <div class="categoryPadding">
+                    </div>
+                    <div class="category-name">
+                        {{CategoryName}}
+                    </div>
+                    <hr/>
+                    <hr/>
+                    <h1>{{ArticleHeadline}}</h1>
+                    <article class="article">
+                        <div id="article-body">
+                            {{{ArticleBody}}}
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </center>
+
+
+    </div>
+</div>
+
+<!--  <script src="file:///android_asset/js/handlebars-v1.1.2.js"></script>
+  <script src="file:///android_asset/article.js"></script>-->
+</body>
+</html>

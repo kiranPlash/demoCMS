@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Forbes_Red">#f34b26</color>
+    <color name="Forbes_blue">#1e396c</color>
+
+    <color name="Forbes_blue_parallex">#801e396c</color>
+
+    <color name="splash_background_grey">#191919</color>
+
+
+    <color name="toolbar_background_coal">#135487</color>
+    <color name="category_color_coal">#2a4353</color>
+    <color name="coal_login_blue">#1b4b94</color>
+    <color name="sign_in_coal">#0d2447</color>
+</resources>

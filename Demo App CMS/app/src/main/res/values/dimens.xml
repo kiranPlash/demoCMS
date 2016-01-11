@@ -1,0 +1,121 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+
+    <dimen name="text_size_h1">28sp</dimen>
+    <dimen name="text_size_h2">26sp</dimen>
+    <dimen name="text_size_h3">24sp</dimen>
+    <dimen name="text_size_h4">22sp</dimen>
+    <dimen name="text_size_h5">20sp</dimen>
+    <dimen name="text_size_h6">18sp</dimen>
+    <dimen name="text_size_h6.5">17sp</dimen>
+    <dimen name="text_size_h7">16sp</dimen>
+    <dimen name="text_size_h7.5">15sp</dimen>
+    <dimen name="text_size_h8">14sp</dimen>
+    <dimen name="text_size_h9">12sp</dimen>
+    <dimen name="text_size_h10">10sp</dimen>
+    <dimen name="text_size_h11">8sp</dimen>
+
+    <dimen name="text_size_9">9sp</dimen>
+
+    <dimen name="margin_0">0dp</dimen>
+    <dimen name="margin_0.5">0.5dp</dimen>
+    <dimen name="margin_1">1dp</dimen>
+    <dimen name="margin_2">2dp</dimen>
+    <dimen name="margin_3">3dp</dimen>
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_6">6dp</dimen>
+    <dimen name="margin_7">7dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_9">9dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_11">11dp</dimen>
+    <dimen name="margin_12">12dp</dimen>
+    <dimen name="margin_13">13dp</dimen>
+    <dimen name="margin_14">14dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_17">17dp</dimen>
+    <dimen name="margin_18">18dp</dimen>
+    <dimen name="margin_19">19dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_21">21dp</dimen>
+    <dimen name="margin_22">22dp</dimen>
+    <dimen name="margin_23">23dp</dimen>
+    <dimen name="margin_24">24dp</dimen>
+    <dimen name="margin_25">25dp</dimen>
+    <dimen name="margin_26">26dp</dimen>
+    <dimen name="margin_27">27dp</dimen>
+    <dimen name="margin_28">28dp</dimen>
+    <dimen name="margin_29">29dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="margin_35">35dp</dimen>
+    <dimen name="margin_40">40dp</dimen>
+    <dimen name="margin_45">45dp</dimen>
+    <dimen name="margin_48">48dp</dimen>
+    <dimen name="margin_50">50dp</dimen>
+    <dimen name="margin_55">55dp</dimen>
+    <dimen name="margin_60">60dp</dimen>
+    <dimen name="margin_70">70dp</dimen>
+    <dimen name="margin_75">75dp</dimen>
+    <dimen name="margin_80">80dp</dimen>
+    <dimen name="margin_100">100dp</dimen>
+    <dimen name="margin_110">110dp</dimen>
+    <dimen name="margin_120">120dp</dimen>
+    <dimen name="margin_130">130dp</dimen>
+    <dimen name="margin_150">150dp</dimen>
+    <dimen name="margin_180">180dp</dimen>
+    <dimen name="margin_190">190dp</dimen>
+    <dimen name="margin_200">200dp</dimen>
+    <dimen name="margin_250">250dp</dimen>
+    <dimen name="margin_300">300dp</dimen>
+
+
+    <dimen name="inside_margin_80px">26dp</dimen>
+    <dimen name="inside_margin_71px">23dp</dimen>
+    <dimen name="inside_margin_75px">25dp</dimen>
+    <dimen name="inside_margin_65px">21dp</dimen>
+    <dimen name="inside_margin_40px">13dp</dimen>
+    <dimen name="inside_margin_50px">16dp</dimen>
+    <dimen name="inside_margin_38px">8dp</dimen>
+    <dimen name="inside_margin_5px">0.7dp</dimen>
+    <dimen name="inside_margin_155px">51dp</dimen>
+    <dimen name="inside_margin_3px">1dp</dimen>
+    <dimen name="inside_margin_90px">30dp</dimen>
+    <dimen name="inside_margin_85px">28dp</dimen>
+
+
+    <dimen name="cover_height">400dp</dimen>
+    <dimen name="cover_width">300dp</dimen>
+
+
+    <dimen name="nav_drw_147px">49dp</dimen>
+    <dimen name="nav_drw_90px">30dp</dimen>
+    <dimen name="nav_drw_40px">13dp</dimen>
+    <dimen name="nav_drw_200px">64dp</dimen>
+    <dimen name="nav_drw_190px">63dp</dimen>
+    <dimen name="nav_divider_20px">15dp</dimen>
+
+    <dimen name="dalal_rectangle_tag">28dp</dimen>
+    <dimen name="dalal_top_padding">18dp</dimen>
+    <dimen name="dalal_bottom_padding">10dp</dimen>
+    <dimen name="dalal_padding_category_left">16dp</dimen>
+    <dimen name="dalal_temp1_img">325dp</dimen>
+
+    <dimen name="dalal_temp2_img_height">225dp</dimen>
+    <dimen name="dalal_img_text_padding_7">7dp</dimen>
+
+    <dimen name="dalal_text_category">20sp</dimen>
+    <dimen name="dalal_text_summary">15sp</dimen>
+    <dimen name="dalal_text_heading">16sp</dimen>
+
+    <dimen name="forbes_new_div_height">2dp</dimen>
+
+
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:trunext="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_gradiant"
+    android:orientation="vertical">
+
+    <in.plash.trunext.customfonts.MyTextView
+        android:id="@+id/toolbar_title_forbes1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_15"
+        android:text="@string/toolbar_title"
+        android:textColor="@color/login_txt_forbes_white"
+        android:textSize="35sp"
+        android:visibility="visible"
+        trunext:fontName="@string/Nicholas_Bold" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_20">
+
+        <in.plash.trunext.customfonts.MyTextView
+            android:id="@+id/txt_inside_btn_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/margin_5"
+            android:padding="@dimen/margin_10"
+            android:text="@string/awesome_signup"
+            android:textColor="@color/login_txt_forbes_white"
+            android:textSize="@dimen/text_size_h7"
+            trunext:fontName="@string/gotham_book" />
+
+
+        <in.plash.trunext.customfonts.MyTextView
+            android:id="@+id/txt_inside_continueAnonymous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_20"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="If you already have confirmed, please "
+            android:textColor="@color/login_txt_forbes_white"
+            android:textSize="@dimen/text_size_h7"
+            trunext:fontName="@string/gotham_book" />
+
+        <in.plash.trunext.customfonts.MyTextView
+            android:id="@+id/txt_go_to_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_10"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="click here to sign in"
+            android:textColor="@color/forbes_login_heighlight"
+            android:textSize="@dimen/text_size_h7"
+            trunext:fontName="@string/gotham_book" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

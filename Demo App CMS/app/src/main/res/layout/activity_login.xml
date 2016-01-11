@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:trunext="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <!--<view
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/alpha_black"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/margin_300">
+
+       <!-- <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:visibility="gone" />-->
+
+        <in.plash.trunext.customfonts.MyTextView
+            android:id="@+id/txt_facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_10"
+            android:text="@string/facebook_login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_h1"
+            trunext:fontName="DroidSerif-Regular.ttf" />
+
+        <in.plash.trunext.customfonts.MyTextView
+            android:id="@+id/txt_anonymous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_10"
+            android:text="@string/anonymous_login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_h5"
+            trunext:fontName="DroidSerif-Regular.ttf" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

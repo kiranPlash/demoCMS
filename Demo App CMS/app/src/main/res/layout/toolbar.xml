@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:trunext="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginStart="@dimen/margin_10"
+        android:gravity="left">
+
+        <ImageButton
+            android:id="@+id/btn_toolbar_left"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_forbes_drawer"
+            android:tint="@color/issue_btn_blue" />
+
+        <ImageButton
+            android:id="@+id/btn_toolbar_left1"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@null"
+
+            android:padding="@dimen/margin_6"
+            android:paddingTop="@dimen/margin_1"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_navigation_menu" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginTop="@dimen/margin_5"
+        android:background="@color/issue_btn_blue" />
+
+    <ImageButton
+        android:id="@+id/btn_toolbar_home"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:background="@null"
+        android:scaleType="@null"
+        android:src="@mipmap/issues_icon"
+        android:tint="@color/issue_btn_blue" />
+
+    <in.plash.trunext.customfonts.MyTextView
+        android:id="@+id/toolbar_title_forbes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:text="@string/toolbar_title"
+        android:textColor="@color/issue_btn_blue"
+        android:textSize="35sp"
+        android:visibility="visible"
+        trunext:fontName="@string/Nicholas_Bold" />
+
+    <in.plash.trunext.customfonts.MyTextView
+        android:id="@+id/toolbar_India"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/toolbar_title_forbes"
+        android:layout_alignRight="@+id/toolbar_title_forbes"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_gravity="center"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:paddingLeft="-1dp"
+        android:text="INDIA"
+        android:textColor="@color/black"
+        android:textSize="8sp"
+        android:visibility="visible"
+        trunext:fontName="@string/segoe_ui_bold" />
+    /
+</RelativeLayout>

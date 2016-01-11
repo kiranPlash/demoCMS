@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:trunext="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inside_margin_5px"
+        android:background="@color/article_line_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/buss_layout_textdata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_16">
+
+            <in.plash.trunext.customfonts.MyTextView
+                android:id="@+id/artilce_tagname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/margin_10"
+                android:singleLine="true"
+                android:text="ON THE COVER"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_h9"
+                android:visibility="gone"
+                trunext:fontName="@string/gotham_book" />
+
+            <in.plash.trunext.customfonts.MyTextView
+                android:id="@+id/article_catigory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/margin_10"
+                android:text="Category"
+                android:textAllCaps="true"
+                android:textColor="@color/article_text_cat"
+                android:textSize="@dimen/text_size_h9"
+                trunext:fontName="@string/AvenirLTStd_Roman" />
+
+
+            <in.plash.trunext.customfonts.MyTextView
+                android:id="@+id/article_headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/margin_10"
+                android:text="Heading"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_h3"
+                trunext:fontName="@string/SourceSansPro_Semibold" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_bussiness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/forbes_load"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:focusable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/progress_animation" />
+
+            <ImageView
+                android:id="@+id/article_imageview"
+                android:layout_width="match_parent"
+                android:layout_height="235dp"
+                android:layout_alignParentTop="true"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop" />
+
+            <View
+                android:id="@+id/view_buss_overlay"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/article_imageview"
+                android:background="#66bb0808"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_16">
+
+            <in.plash.trunext.customfonts.MyTextView
+                android:id="@+id/article_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:paddingBottom="@dimen/margin_5"
+                android:paddingTop="@dimen/margin_5"
+                android:text="@string/place_holder_sum"
+                android:textColor="@color/article_text_sum"
+                android:textSize="@dimen/text_size_h7"
+                trunext:fontName="@string/SourceSansPro_Regular" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/inside_margin_5px"
+            android:layout_marginBottom="@dimen/forbes_new_div_height"
+            android:background="@color/article_line_divider" />
+
+    </LinearLayout>
+</LinearLayout>

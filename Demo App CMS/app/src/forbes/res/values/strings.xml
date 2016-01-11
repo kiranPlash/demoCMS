@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CMS Demo</string>
+    <string name="db_name">cmsdemo.db</string>
+    <string name="toolbar_title">TruNext</string>
+    <string name="toolbar_subtitle">Demo</string>
+    <string name="server_error">Unable to connect to server, Please Try after some time...</string>
+
+
+
+</resources>

@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:trunext="http://schemas.android.com/apk/res-auto"
+    android:layout_width="275dp"
+    android:layout_height="match_parent"
+    android:background="#bf0a0c0d"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/nav_drw_90px">
+
+
+            <ImageButton
+                android:id="@+id/btn_nav_red_cross"
+                android:layout_width="@dimen/nav_drw_90px"
+                android:layout_height="@dimen/nav_drw_90px"
+                android:layout_marginLeft="@dimen/margin_13"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/nav_re_cross"
+                android:tint="@color/white" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="@dimen/nav_drw_200px"
+                    android:layout_height="@dimen/nav_drw_200px"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_20"
+                    android:background="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/nav_pic_behind_grey"
+                    android:tint="@color/white"
+                    android:visibility="visible" />
+
+                <ImageButton
+                    android:id="@+id/btn_nav_pro_pic"
+                    android:layout_width="@dimen/nav_drw_190px"
+                    android:layout_height="@dimen/nav_drw_190px"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_20"
+                    android:background="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/nav_pro_pic" />
+
+                <Button
+                    android:id="@+id/img_nav_red_num"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/btn_nav_pro_pic"
+                    android:background="@drawable/nav_circle_blue"
+                    android:scaleType="centerInside"
+                    android:text="5"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/btn_nav_edit"
+                    android:layout_width="@dimen/margin_10"
+                    android:layout_height="@dimen/margin_11"
+                    android:layout_alignBottom="@+id/imageButton3"
+                    android:layout_toRightOf="@+id/img_nav_red_num"
+                    android:background="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/nav_edit_pen"
+                    android:tint="@color/white"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20"
+            android:orientation="vertical">
+
+            <in.plash.trunext.customfonts.MyTextView
+                android:id="@+id/nav_user_name"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:lines="2"
+                android:text="GUEST"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_h6"
+                trunext:fontName="@string/segoe_ui_bold" />
+
+            <in.plash.trunext.customfonts.MyTextView
+                android:id="@+id/txt_nav_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_20"
+                android:background="@drawable/rounded_corner_nav"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin_10"
+                android:paddingLeft="@dimen/margin_20"
+                android:paddingRight="@dimen/margin_20"
+                android:paddingTop="@dimen/margin_10"
+                android:text="LOG OUT"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_h9"
+                trunext:fontName="@string/Lato_Regular" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="@dimen/margin_18"
+                    android:layout_marginRight="@dimen/margin_18"
+                    android:layout_marginTop="@dimen/margin_3"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/nav_folder"
+                    android:tint="@color/white" />
+
+                <in.plash.trunext.customfonts.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/margin_30"
+                    android:text="MY SUBSCRIPTION"
+                    android:textColor="@color/selector_text"
+                    android:textSize="@dimen/text_size_h7"
+
+                    trunext:fontName="@string/Lato_Regular" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/nav_divider_20px"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="@dimen/margin_18"
+                    android:layout_marginRight="@dimen/margin_18"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/nav_bookmark"
+                    android:tint="@color/white" />
+
+                <in.plash.trunext.customfonts.MyTextView
+                    android:id="@+id/txt_nav_bookmark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/margin_30"
+                    android:text="MY BOOKMARKS"
+                    android:textColor="@color/selector_text"
+                    android:textSize="@dimen/text_size_h7"
+                    trunext:fontName="@string/Lato_Regular" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/nav_divider_20px"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="@dimen/margin_18"
+                    android:layout_marginRight="@dimen/margin_18"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/nav_bell_sound_notification"
+                    android:tint="@color/white" />
+
+                <in.plash.trunext.customfonts.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="NOTIFICATIONS"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_h7"
+                    trunext:fontName="@string/Lato_Regular" />
+
+                <ToggleButton
+                    android:id="@+id/toggleButton1"
+                    android:layout_width="40dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="@dimen/margin_30"
+                    android:background="@drawable/toggle_selector"
+                    android:checked="false"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn="" />
+
+
+                <!-- <ImageView
+                     android:layout_width="wrap_content"
+                     android:layout_height="30dp"
+                     android:layout_marginLeft="@dimen/margin_30"
+                     android:adjustViewBounds="true"
+                     android:src="@drawable/nav_on_off"
+                     android:tint="@color/white" />-->
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/nav_divider_20px"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="@dimen/margin_18"
+                    android:layout_marginRight="@dimen/margin_18"
+                    android:layout_marginTop="@dimen/margin_2"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/nav_settings"
+                    android:tint="@color/white" />
+
+                <in.plash.trunext.customfonts.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/margin_30"
+                    android:text="SETTINGS"
+                    android:textColor="@color/selector_text"
+                    android:textSize="@dimen/text_size_h7"
+                    trunext:fontName="@string/Lato_Regular" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/nav_divider_20px"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="@dimen/margin_18"
+                    android:layout_marginRight="@dimen/margin_18"
+                    android:layout_marginTop="@dimen/margin_3"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/nav_email_outline"
+                    android:tint="@color/white" />
+
+                <in.plash.trunext.customfonts.MyTextView
+                    android:id="@+id/nav_email_us"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/margin_30"
+                    android:text="EMAIL US"
+                    android:textColor="@color/selector_text"
+                    android:textSize="@dimen/text_size_h7"
+                    trunext:fontName="@string/Lato_Regular" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/nav_divider_20px"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="@dimen/margin_18"
+                    android:layout_marginRight="@dimen/margin_18"
+                    android:layout_marginTop="@dimen/margin_3"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/nav_exclamation"
+                    android:tint="@color/white" />
+
+                <in.plash.trunext.customfonts.MyTextView
+                    android:id="@+id/nav_about_us"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/margin_30"
+                    android:text="ABOUT US / TERMS"
+                    android:textColor="@color/selector_text"
+                    android:textSize="@dimen/text_size_h7"
+                    trunext:fontName="@string/Lato_Regular" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_40"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <in.plash.trunext.customfonts.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="LOVE US? SHARE ABOUT US"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_h7"
+                trunext:fontName="@string/Lato_Regular" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_20"
+                android:layout_marginTop="@dimen/margin_20"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:adjustViewBounds="true"
+                    android:background="@null"
+                    android:padding="@dimen/margin_1"
+                    android:src="@drawable/nav_facebook"
+                    android:tint="@color/white" />
+
+                <ImageView
+                    android:id="@+id/nav_watsapp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:adjustViewBounds="true"
+                    android:background="@null"
+                    android:padding="@dimen/margin_1"
+                    android:src="@drawable/nav_whatsapp"
+                    android:tint="@color/white" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:adjustViewBounds="true"
+                    android:background="@null"
+                    android:padding="@dimen/margin_1"
+                    android:src="@drawable/nav_twitter"
+                    android:tint="@color/white" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

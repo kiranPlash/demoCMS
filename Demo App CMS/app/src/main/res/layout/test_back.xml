@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:trunext="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app1="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+   <!-- <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_inside_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/dalal_street_blue"
+        android:gravity="center"
+        android:paddingBottom="@dimen/margin_10"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10"
+        android:paddingTop="@dimen/margin_30">
+
+        <in.plash.trunext.customfonts.MyTextView
+            android:id="@+id/txt_l_inside_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_h7"
+            trunext:fontName="Lato-Regular.ttf" />
+
+        <in.plash.trunext.customfonts.MyTextView
+            android:id="@+id/txt_l_inside_accounts"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="ACCOUNTS"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_h7"
+            trunext:fontName="Lato-Regular.ttf" />
+
+        <in.plash.trunext.customfonts.MyTextView
+            android:id="@+id/txt_l_inside_signin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="Sign In"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_h7"
+            trunext:fontName="Lato-Regular.ttf" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_50">
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app1:mtf_cardCollapsedHeight="1dp"
+            app1:mtf_image="@drawable/ic_mail_grey600_24dp"
+            trunext:mtf_labelColor="@color/dalal_street_blue">
+
+            <in.plash.trunext.customfonts.MyEditText
+                android:id="@+id/edit_txt_inside_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="EMAIL ID"
+                android:padding="@dimen/margin_10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_h7"
+                trunext:fontName="Lato-Regular.ttf" />
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+
+            <in.plash.trunext.customfonts.MyEditText
+                android:id="@+id/edit_txt_inside_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="PASSWORD"
+                android:inputType="textPassword"
+                android:textSize="@dimen/text_size_h7"
+                trunext:fontName="Lato-Regular.ttf" />
+
+            <ImageButton
+                android:id="@+id/image_show_password"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/edit_txt_inside_password"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:paddingBottom="@dimen/margin_15"
+                android:scaleType="@null"
+                android:src="@drawable/visible1" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_20">
+
+        <in.plash.trunext.customfonts.MyTextView
+            android:id="@+id/txt_inside_btn_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner_signin"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:paddingBottom="@dimen/margin_7"
+            android:paddingLeft="@dimen/margin_70"
+            android:paddingRight="@dimen/margin_70"
+            android:paddingTop="@dimen/margin_7"
+            android:text="S i g n  I n"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_h7"
+            trunext:fontName="Lato-Regular.ttf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_50">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/margin_1"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/alpha_black" />
+
+            <in.plash.trunext.customfonts.MyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="OR"
+                android:textColor="@color/alpha_black"
+                trunext:fontName="Lato-Regular.ttf" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/margin_1"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/alpha_black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_40"
+            android:paddingRight="@dimen/margin_40">
+
+            <ImageButton
+                android:id="@+id/btn_inside_twitter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:focusable="true"
+                android:src="@mipmap/ic_twitter" />
+
+
+            <ImageButton
+                android:id="@+id/btn_inside_facebook"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:focusable="true"
+                android:src="@mipmap/ic_facebook" />
+
+            <ImageButton
+                android:id="@+id/btn_inside_google"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:focusable="true"
+                android:src="@mipmap/ic_googleplus" />
+
+
+        </LinearLayout>
+
+        <in.plash.trunext.customfonts.MyTextView
+            android:id="@+id/txt_inside_continueAnonymous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingTop="@dimen/margin_20"
+            android:text="CONTINUE ANONYMOUSLY"
+            android:textColor="@android:color/darker_gray" />
+
+    </LinearLayout>
+-->
+</LinearLayout>

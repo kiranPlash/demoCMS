@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+
+    <!--  <include
+          layout="@layout/content_main"
+          />-->
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="275dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/transparent"
+        android:fitsSystemWindows="true">
+
+        <include layout="@layout/navigation_drawer" />
+
+
+        <RelativeLayout
+            android:id="@+id/lin_left_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/black"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/relative_layout_news_feed_relative_base"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_30"
+                    android:paddingLeft="@dimen/margin_20">
+
+                    <ImageView
+                        android:id="@+id/img_left_drawer_profile"
+                        android:layout_width="@dimen/margin_50"
+                        android:layout_height="@dimen/margin_50"
+                        android:padding="@dimen/margin_4"
+                        android:src="@drawable/img_theme_1" />
+
+                    <LinearLayout
+                        android:id="@+id/lin_left_drawer_user_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/img_left_drawer_profile"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/margin_10">
+
+                        <TextView
+                            android:id="@+id/txt_left_drawer_user_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:text="GUEST"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="@dimen/text_size_h7"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/txt_left_drawer_logout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_2"
+                            android:layout_marginTop="@dimen/margin_2"
+                            android:padding="@dimen/margin_5"
+                            android:text="@string/title_logout"
+                            android:textColor="@color/drawer_text_gray"
+                            android:textSize="@dimen/text_size_h9" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/lin_book_mark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_book_mark"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_40"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/black"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/margin_25"
+                        android:text="@string/title_book_mark"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/text_size_h8" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/list_left_drawer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:choiceMode="singleChoice"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0dp"
+                    android:paddingLeft="@dimen/margin_10" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </android.support.design.widget.NavigationView>
+    <!-- app:headerLayout="@layout/nav_header_main" -->
+
+</android.support.v4.widget.DrawerLayout>

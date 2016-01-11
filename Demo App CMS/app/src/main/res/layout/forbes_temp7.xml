@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:trunext="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/buss_layout_textdata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/inside_margin_71px"
+            android:layout_marginRight="@dimen/inside_margin_71px"
+            android:orientation="vertical">
+
+
+            <in.plash.trunext.customfonts.MyTextView
+                android:id="@+id/forbes_cat_txt_headline_theme7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:paddingBottom="@dimen/margin_13"
+                android:paddingTop="@dimen/margin_13"
+                android:text="Nuggets"
+                android:textColor="#000000"
+                android:textSize="@dimen/text_size_h7"
+                trunext:fontName="@string/segoe_ui_bold" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
